@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>job application</h1>
+
+    <form >
+
+        <label for="name">name</label>
+         <input 
+         type="text"
+         name="name" id="name"
+         placeholder="enter your name"
+         required>
+         <br>
+         <br>
+
+        
+        <label for="email">email</label>
+         <input 
+         type="email"
+         name="email" id="email" 
+         placeholder="enter your email"
+         required>
+         <br>
+         <br>
+
+        <label for="phone">phone</label>
+         <input 
+         type="phone"
+         name="tel" id="phone"  
+         placeholder="enter your phone number"
+         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+         required>
+         <br>
+         <br>
+        <label for="file">resume</label>
+         <input 
+         type="file" name="file" id="file" value="resume" placeholder="resume"
+         required>
+         <br>
+         <br>
+        
+        <label for="number">experience(in year)</label>
+         <input type="number" value="counter" id="number" min="0" max="50">
+         <br>
+         <br>
+        
+        <fieldset>
+            <legend>skil</legend>
+            <label for="checkbox">HTML</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <br>
+            <br>
+
+            <label for="checkbox1">CSS</label>
+            <input type="checkbox" name="checkbox" id="checkbox1">
+            <br>
+            <br>
+
+            <label for="checkbox2">java script</label>
+            <input type="checkbox" name="checkbox" id="checkbox2">
+            <br>
+            <br>
+         </fieldset>
+         <br>
+         <br>
+
+         <label for="education">highest education</label>
+         <select name="education" id="education">
+            <option value="8pass">8th pass</option>
+            <option value="10pass">high school</option>
+            <option value="12pass">enter mediate</option>
+            <option value="graduation">graduation</option>
+            <option value="postgraduation">post graduation</option>
+            <option value="noeducation">no education</option>
+         </select>
+         <br>
+         <br>
+        <b>ability</b>
+         <br>
+         <label for="ability">part time</label>
+         <input type="radio" name="ability" id="ability" value="ability" >
+         <br>
+         <label for="ability2">full time</label>
+         <input type="radio" name="ability" id="ability2" value="ability">
+        <br>
+        <br>
+
+        <label for="comment">addition comment</label>
+        <br>
+        <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+        <br>
+        <button width="5">submit</button>
+    
+    </form>
+</body>
+</html>
