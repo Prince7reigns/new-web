@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card 2</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card{
+            height: 600px;
+            width: 400px;
+            border-radius:20px;
+            background-color: white;
+            box-shadow: 1px 1px 30px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            text-transform: capitalize;
+        }
+        
+        .card > img {
+            height: 30%;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .text-box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .amount-box{
+            height: 10%;
+            width: 85%;
+            background-color: #a18cd1;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        }
+
+        .left-box{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .left-box > img{
+            height: 40px;
+            width: 40px;
+           padding: 5px;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+        
+        
+        .card > button{
+            height: 10%;
+            width: 85%;
+            background-color: rgba(8, 8, 33, 0.907);
+          border-radius: 20px; 
+          font-size: 1rem; 
+          font-weight: bold;
+          border: none;
+          box-shadow: 1px 1px  30px black;
+        }
+
+        .card > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size:1rem;
+        }
+
+        @media screen and (min-width: 480px) {
+ .card {
+    flex-wrap: wrap;
+  }
+}
+    </style>
+</head>
+<body>
+    
+     <div class="container">
+         
+        <div class="card">
+            
+           <img src="cloud_technology.webp" >
+        
+           <div class="text-box">
+            <h2>Order summery</h2>
+
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minus tempora totam suscipit nam. Repudiandae, assumenda. Id, harum.</p>
+           </div>
+
+           <div class="amount-box">
+             <div class="left-box">
+
+                <img src="music.webp">
+
+                <div class="text">
+                    <p>amount</p>
+                <p>99.9$</p>
+                </div>
+            </div>
+
+             <div class="right-box">
+                <a href="#">change</a>
+             </div>
+           </div>
+
+           <button>Procecced to payment</button>
+
+           <a href="#">cancel payment</a>
+        </div>
+
+     </div>
+
+</body>
+</html>
