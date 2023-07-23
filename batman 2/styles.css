@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.front-img{
+    width:100vw;
+    height: 100vh;
+    background-image: url(wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-size: cover;
+
+}
+
+.text{
+    height:300px;
+    width: 100%;
+    z-index: 1;
+    color: red;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.text > p > b {
+    font-size: 5rem;
+}
+.text > p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+strong{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+ /* middle */
+
+.middle{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle > p{
+    font-size: 5rem;
+}
+.middle >p > b{
+    font-size: 8rem; 
+}
+
+/* card box */
+.card-box{
+    height: 550px;
+    width: 100%;
+    background-color: rgba(1, 1, 5, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.first-card{
+    height: 350px;
+    width: 250px;
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px black;
+    border-radius: 20px;
+    transition: all 1s 0 linear;
+}
+
+.first-box > img{
+    width: 100%;
+    height: 50%;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.second-box{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 8px;
+  gap: 10px;
+}
+
+.first-card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 40px red;
+}
+.text > p{
+    animation: sizeChange 2s linear infinite alternate; 
+}
+.middle > p> b{
+    animation: sizeChange 2s linear infinite alternate;
+}
+@keyframes sizeChange {
+    from {
+      font-size: 36px; /* Initial font size */
+    }
+    to {
+      font-size: 8rem; /* Final font size */
+    }
+  }
+
+.more-details{
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
+
+ .contect-us {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    color: red;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 3px 3px 40px red;
+
+}
+
+.about-us{
+    height: 100%;
+    width: 50%; 
+    background-color: red;
+    padding: 40px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 3px 3px 40px rgb(0, 0, 0);
+}
+
+.footer{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 1, 5, 0.9);
+    color: red;
+    font-size: 2rem;
+    border: 1px solid black;
+}
