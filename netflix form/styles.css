@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 1200px;
+    width: 100vw;
+    position: relative;
+    background-image: url('b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  .container::before {
+    content: 'netflix';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 29, 29, 0.6); 
+  }
+
+ .form{
+    height: 650px;
+    width: 450px;
+    background-color: rgba(12, 12, 12 ,0.7);
+    z-index: 1;
+    padding: 40px;
+    color: white;  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    top: -110px;
+} 
+
+.makers{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: 10px;
+}
+
+#emmail{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(52, 47, 47);
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+     padding-left: 15px; 
+     color: white;
+}
+
+.buttun{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.buttun > #ssd{
+    height: 43.73px;
+    width: 100%;
+    background-color: red;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check > a{
+    text-decoration: none;
+    color: rgba(200, 177, 177, 0.936);
+}
+
+.footer{
+    height: 25%;
+    width: 100%;
+    color: rgba(162, 150, 150, 0.936);
+    font-size: 1.1rem;
+}
+
+.footer > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+.parr{
+    font-size: 0.87rem;
+    color: rgba(162, 143, 143, 0.936);
+    margin-top: 30px;
+}
+
+.a{
+    color: blue;
+}
