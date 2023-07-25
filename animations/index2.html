@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loder{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            gap:20px ;
+            justify-content: space-evenly;
+        }
+
+        .dots{
+            height:20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: violet;
+            position: relative;
+            animation: loders  3s infinite ease-out alternate;
+        }
+
+        .dot{
+            background-color: blue;
+        }
+
+        .dot2{
+            animation-delay: 0.5s;
+            background-color: red;
+        }
+
+        
+        .dot3{
+            animation-delay:  0.7s;
+            background-color: yellow;
+        }
+
+        
+        .dot4{
+            animation-delay: 0.9s;
+            background-color: green;
+        }
+
+        @keyframes loders{
+            form{
+                transform: translateY(-300px);
+            }
+
+            to{
+                transform: translateY(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+      <div class="loder">
+        <div class="dots dot"></div>
+        <div class="dots dot2"></div>
+        <div class="dots dot3"></div>
+        <div class="dots dot4"></div>
+      </div>
+
+</body>
+</html>
