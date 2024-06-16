@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    height: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.container{
+    height: 600px;
+    width: 400px;
+  background: linear-gradient(135deg, #00feba , #5b548a);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 20px 40px 20px;
+  
+}
+
+form{
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search{
+    height:100%;
+    width: 80%;
+    border-radius: 40px;
+    border: none;
+    padding-left: 10px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: gray;
+}
+
+.button{
+    height: 100%;
+    width: 15%;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    border-radius: 49.5%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button > img{
+    width: 30%;
+    height: 30%;
+  
+}
+
+.wether-img{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wether-img > img{
+    width: 70%;
+    height: 100%;
+}
+
+.text-div{
+    width: 100%;
+    height:130px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between
+}
+
+.text-div > h1{
+ font-size:5rem;
+   margin: 0;
+ font-weight: normal;
+}
+
+.text-div > p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.humidity,.wind-speed{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.humidity-img,.wind-speed-img{
+    width: 50%;
+    height: 100%;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: end;
+}
+
+.humidity-img> img{
+    width: 45%;
+    height: 45%;
+}
+
+.wind-speed-img > img{
+    width: 45%;
+    height: 45%;
+}
+
+ .fun{
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+    opacity: 0.8;
+}
