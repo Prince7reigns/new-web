@@ -3,9 +3,15 @@ const button = document.querySelector("#add-task");
 const node = document.querySelector("ul")
 
 function saveData(){
-    console.log("hello");
     localStorage.setItem("data",node.innerHTML)
 }
+
+
+function showData(){
+    node.innerHTML = localStorage.getItem("data")
+}
+
+showData()
 
 function addTask(tesk){
     if(tesk.value===''){
